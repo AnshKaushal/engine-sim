@@ -237,11 +237,11 @@ document.addEventListener("DOMContentLoaded",	function() {
 	// MOTOR CONFIG
 	
 	let 
-			rpmIdle = 1200,
+			rpmIdle = 800,
 			rpmMax = 8000,
 			rpmRedzone = 6500,
-			torqueMin = 20, // in m.kg
-			torqueMax = 45, // in m.kg
+			torqueMin = 30, // in m.kg
+			torqueMax = 55, // in m.kg
 
 			torque,
 			rpm = 0,
@@ -343,11 +343,11 @@ document.addEventListener("DOMContentLoaded",	function() {
 
 		// Update engine sound
 		if (source) {
-			source.playbackRate.value = rpm / 4000;
+			source.playbackRate.value = rpm / 3000;
 		}
 
 		if (source2) {
-			source2.playbackRate.value = speed / 500;
+			source2.playbackRate.value = speed / 100;
 		}
 
 	})();
